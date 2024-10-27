@@ -52,6 +52,7 @@ INSERT INTO livros (id_autores, nome_livro) VALUES ('Daisy Jones & The Six');
 INSERT INTO livros (id_autores, nome_livro) VALUES ('O Conto da Aia');
 INSERT INTO livros (id_autores, nome_livro) VALUES ('Cidade dos Ossos');
 
+
 /*Selecionando todos os livros*/    
 SELECT * FROM livros;
 
@@ -61,11 +62,17 @@ FROM autores a
 INNER JOIN livros l ON a.id_autores = l.id_autores;
 
 /*Selecionando todos os livros mesmo que não tenham autores associados*/
+INSERT INTO autores (nome_autor) VALUES ('Machado de Assis');
+
 SELECT a.nome_autor, l.nome_livro
 FROM autores a
 LEFT JOIN livros l ON a.id_autores = l.id_autores;
 
+
+
 /*Selecionando todos os autores, mesmo que não tenham livros associados*/
+INSERT INTO livros (nome_livro) VALUES ('A Empregada');
+
 SELECT a.nome_autor, l.nome_livro
 FROM autores a
 RIGHT JOIN livros l ON a.id_autores = l.id_autores;
