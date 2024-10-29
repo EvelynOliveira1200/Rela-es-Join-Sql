@@ -1,9 +1,9 @@
-CREATE DATABASE join_sql
+CREATE DATABASE join_sql;
 
 /*Criação de tabelas autores*/
 CREATE TABLE autores (
 id_autores SERIAL PRIMARY KEY,
-nome_autor VARCHAR(50),
+nome_autor VARCHAR(50)
 );
 
 /*Criação de tabelas livros*/
@@ -36,21 +36,21 @@ INSERT INTO autores (nome_autor) VALUES ('Cassandra Clare');
 SELECT * FROM autores;
 
 /*Inserção de dados de livros*/
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Verity');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('It: A Coisa');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('A Culpa é das Estrelas');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Diário de uma Paixão');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Como Eu Era Antes de Você');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('A Guerra dos Tronos');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Os Pilares da Terra');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Deuses Americanos');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Along Came a Spider');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('O Alquimista');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('O Código Da Vinci');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Kafka à Beira-Mar');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Daisy Jones & The Six');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('O Conto da Aia');
-INSERT INTO livros (id_autores, nome_livro) VALUES ('Cidade dos Ossos');
+INSERT INTO livros (id_autores, nome_livro) VALUES (1, 'Verity');
+INSERT INTO livros (id_autores, nome_livro) VALUES (2, 'It: A Coisa');
+INSERT INTO livros (id_autores, nome_livro) VALUES (3, 'A Culpa é das Estrelas');
+INSERT INTO livros (id_autores, nome_livro) VALUES (4, 'Diário de uma Paixão');
+INSERT INTO livros (id_autores, nome_livro) VALUES (5, 'Como Eu Era Antes de Você');
+INSERT INTO livros (id_autores, nome_livro) VALUES (6, 'A Guerra dos Tronos');
+INSERT INTO livros (id_autores, nome_livro) VALUES (7, 'Os Pilares da Terra');
+INSERT INTO livros (id_autores, nome_livro) VALUES (8, 'Deuses Americanos');
+INSERT INTO livros (id_autores, nome_livro) VALUES (9, 'Along Came a Spider');
+INSERT INTO livros (id_autores, nome_livro) VALUES (10, 'O Alquimista');
+INSERT INTO livros (id_autores, nome_livro) VALUES (11, 'O Código Da Vinci');
+INSERT INTO livros (id_autores, nome_livro) VALUES (12, 'Kafka à Beira-Mar');
+INSERT INTO livros (id_autores, nome_livro) VALUES (13, 'Daisy Jones & The Six');
+INSERT INTO livros (id_autores, nome_livro) VALUES (14, 'O Conto da Aia');
+INSERT INTO livros (id_autores, nome_livro) VALUES (15, 'Cidade dos Ossos');
 
 
 /*Selecionando todos os livros*/    
